@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+          Courses List
+        </div>
+        <ul class="list-group list-group-flush">
+            <app-course-item *ngFor="let course of courses" (coursredetail)="listClick(course)" [Data]="course"></app-course-item>
+        </ul>
+      </div>  
+      <br>  
+      <div class="card">
+        <div class="card-header">
+          Course Details
+        </div>
+        <ul class="list-group list-group-flush">
+            <app-course-details></app-course-details>
+        </ul>
+      </div>   
+</div>
